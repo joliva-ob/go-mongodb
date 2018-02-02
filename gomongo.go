@@ -32,7 +32,7 @@ type Book struct {
 }
 
 func main() {
-	session, err := mgo.Dial("localhost")
+	session, err := mgo.Dial("localhost:32768")
 	if err != nil {
 		panic(err)
 	}
